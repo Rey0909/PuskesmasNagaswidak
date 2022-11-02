@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  user-select: none;
+}
+.bg-img{
+  background: url('1.webp');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.bg-img:after{
+  position: fixed;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+/* container login */
+.content{
+  
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 350px;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.04);
+  border-radius: 20px;
+  position: fixed;
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+  
+  
+}
+
+/* Login akun petugas*/
+.content header{
+  width: 300px;
+  height: 50px;
+  color: white;
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0 0 45px 0;
+  font-family: 'open sans',sans-serif;
+  
+ 
+}
+.login-box{
+  width: 320px;
+  height: 420px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  
+
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+  box-shadow: 2px 2px 2px 2px #222;
+  border-radius: 20px;
+}
+.field span{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'quicksand',sans-serif;
+  
+}
+.space{
+  margin-top: 16px;
+}
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.pass-key:valid ~ .show{
+  display: block;
+}
+.pass{
+  text-align: left;
+  margin: 10px 0;
+}
+.pass a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+}
+.pass:hover a{
+  text-decoration: underline;
+}
+/* Tombol Login*/
+
+.field input[type="submit"]{
+  background: #3498db ;
+  color: white;
+  font-size: 21px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-family: 'quicksand',sans-serif;
+  box-shadow: 2px 2px 2px 2px #222;
+  border-radius: 20px;
+
+}
+
+.field input[type="submit"]:hover{
+  background: #2691d9;
+}
+.login{
+  color: white;
+  margin: 20px 0;
+  font-family: 'Montserrat',sans-serif;
+}
+.links{
+  display: flex;
+  cursor: pointer;
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+  @media screen and (max-width: 1000px) {
+   .content {
+    width: fix-content; height: fit-content;
+    
+   }
+   
+  }   
+   
